@@ -26,6 +26,7 @@ kotlin {
             isStatic = true
         }
     }
+    androidTarget()
     
     sourceSets {
         androidMain.dependencies {

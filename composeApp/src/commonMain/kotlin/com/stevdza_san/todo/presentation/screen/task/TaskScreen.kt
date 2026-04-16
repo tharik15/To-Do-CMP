@@ -131,6 +131,7 @@ fun TaskScreen(
                                         else "New Task created"
                                     )
                                 }
+                                navigateBack()
                             },
                             onError = { message ->
                                 scope.launch {

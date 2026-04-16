@@ -26,7 +26,6 @@ kotlin {
             isStatic = true
         }
     }
-    androidTarget()
     
     sourceSets {
         androidMain.dependencies {
@@ -72,11 +71,11 @@ kotlin {
 }
 
 android {
-    namespace = "com.stevdza_san.todo"
+    namespace = "com.tharik.todo"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.stevdza_san.todo"
+        applicationId = "com.tharik.todo"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
@@ -105,7 +104,7 @@ dependencies {
 sqldelight {
     databases {
         create("TaskDatabase") {
-            packageName.set("com.stevdza_san")
+            packageName.set("com.tharik")
         }
     }
 }
